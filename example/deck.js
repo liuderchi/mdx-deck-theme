@@ -1,4 +1,5 @@
 import intro from './topics/intro.mdx'
+import textOverflow from './topics/demo-text-overflow.mdx'
 import gatsbyOverview from './topics/gatsby-overview.mdx'
 import newFeatures from './topics/new-features.mdx'
 import demo from './topics/demo.mdx'
@@ -14,6 +15,7 @@ import 'typeface-spectral'
 
 export { default as theme } from 'gatsby-mdx-theme'
 export default [
+  ...textOverflow,
   ...intro,
   ...gatsbyOverview,
   ...newFeatures,
