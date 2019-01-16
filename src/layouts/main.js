@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { theme as mcsTheme, LogoMTK } from 'mcs-ui';
 
+import { MtkLogoContainer } from './section';
 import { Center } from '../components';
+import ConfidentialLevel from '../components/ConfidentialLevel';
 import colors from '../colors';
-import { theme as mcsTheme } from 'mcs-ui';
 
 const Container = styled.div`
   display: flex;
@@ -41,6 +43,21 @@ const PurpleBg = styled.div`
   background-color: ${mcsTheme.color.primary};
 `;
 
+const MainWithConfidential = level => ({ children }) => (
+  <Container>
+    <CenteredHalf>{children}</CenteredHalf>
+    <PurpleBg />
+    <MtkLogoContainer>
+      <LogoMTK height={20} width={80} />
+      <ConfidentialLevel level={level} />
+    </MtkLogoContainer>
+  </Container>
+);
+
+export const MainLevelA = MainWithConfidential('A');
+export const MainLevelB = MainWithConfidential('B');
+export const MainLevelC = MainWithConfidential('C');
+
 export default function Main({ children }) {
   return (
     <Container>
@@ -53,3 +70,6 @@ export default function Main({ children }) {
 Main.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+// const withConfidential = (level, layout) => ({ children }) =>
+//   layout({ level, children });
