@@ -1,20 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import colors from '../colors'
+import colors from '../colors';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const Layers = styled.div`
   height: 25vh;
   width: 25vw;
   position: relative;
-`
+`;
 
 const Layer = styled.div`
   background-color: #f5f3f7;
@@ -26,7 +26,7 @@ const Layer = styled.div`
   left: 0;
 
   clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
-`
+`;
 
 const Center = styled.div`
   position: absolute;
@@ -38,13 +38,13 @@ const Center = styled.div`
   @media only screen and (min-width: 1024px) {
     transform: translateX(-100%) translateY(-100%); // hack
   }
-`
+`;
 
 export function Boxes({ children, inverted }) {
-  let layers = [colors.code.bg, colors.lilac, colors.gatsby]
+  let layers = [colors.code.bg, colors.lilac, colors.gatsby];
 
   if (inverted) {
-    layers = layers.reverse()
+    layers = layers.reverse();
   }
 
   return (
@@ -56,12 +56,12 @@ export function Boxes({ children, inverted }) {
             style={{
               top: `${(index === 1 ? -15 : -10) * index}%`,
               left: `${(index === 1 ? -15 : -10) * index}%`,
-              backgroundColor: color
+              backgroundColor: color,
             }}
           />
         ))}
       </Layers>
       <Center>{children}</Center>
     </Container>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import colors from './colors'
+import colors from './colors';
 
 const preStyle = {
   color: colors.code.text,
@@ -17,8 +17,8 @@ const preStyle = {
   WebkitHyphens: 'none',
   MozHyphens: 'none',
   msHyphens: 'none',
-  hyphens: 'none'
-}
+  hyphens: 'none',
+};
 
 export default {
   'code[class*="language-"]': preStyle,
@@ -27,91 +27,91 @@ export default {
     background: '#272822',
     padding: '.1em',
     borderRadius: '.3em',
-    whiteSpace: 'normal'
+    whiteSpace: 'normal',
   },
   comment: {
-    color: colors.code.comment
+    color: colors.code.comment,
   },
   punctuation: {
-    color: colors.code.punctuation
+    color: colors.code.punctuation,
   },
   property: {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   tag: {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   boolean: {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   number: {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   'function-name': {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   constant: {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   symbol: {
-    color: colors.code.tag
+    color: colors.code.tag,
   },
   selector: {
-    color: colors.code.selector
+    color: colors.code.selector,
   },
   'attr-name': {
-    color: colors.code.selector
+    color: colors.code.selector,
   },
   string: {
-    color: colors.code.selector
+    color: colors.code.selector,
   },
   char: {
-    color: colors.code.selector
+    color: colors.code.selector,
   },
   function: {
-    color: colors.code.selector
+    color: colors.code.selector,
   },
   builtin: {
-    color: colors.code.selector
+    color: colors.code.selector,
   },
   'atrule, keyword, class-name': {
-    color: colors.code.keyword
+    color: colors.code.keyword,
   },
   'attr-value': {
-    color: colors.code.keyword
+    color: colors.code.keyword,
   },
   keyword: {
-    color: colors.code.keyword
+    color: colors.code.keyword,
   },
   'class-name': {
-    color: colors.code.keyword
+    color: colors.code.keyword,
   },
   inserted: {
-    color: colors.code.add
+    color: colors.code.add,
   },
   deleted: {
-    color: colors.code.remove
+    color: colors.code.remove,
   },
   regex: {
-    color: colors.code.regex
+    color: colors.code.regex,
   },
   important: {
     color: colors.code.regex,
-    fontWeight: `normal`
+    fontWeight: `normal`,
   },
   bold: {
-    fontWeight: `bold`
+    fontWeight: `bold`,
   },
   italic: {
-    fontStyle: `italic`
+    fontStyle: `italic`,
   },
   entity: {
-    cursor: `help`
+    cursor: `help`,
   },
   '.namespace': {
-    opacity: 0.7
+    opacity: 0.7,
   },
   '.language-css string, .style string': {
-    color: colors.code.cssString
-  }
-}
+    color: colors.code.cssString,
+  },
+};

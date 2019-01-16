@@ -1,21 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Svg = styled.svg`
   min-height: 50px;
   min-width: 150px;
-`
+`;
 
 export const Logo = ({ inverted, ...rest }) => {
   const colors = inverted
     ? {
         fill: '#639',
-        background: 'white'
+        background: 'white',
       }
     : {
         fill: 'white',
-        background: '#639'
-      }
+        background: '#639',
+      };
   return (
     <Svg id="Ebene_1" viewBox="0 0 106 28" {...rest}>
       <path
@@ -34,5 +34,5 @@ export const Logo = ({ inverted, ...rest }) => {
         />
       </g>
     </Svg>
-  )
-}
+  );
+};

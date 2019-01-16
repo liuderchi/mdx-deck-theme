@@ -12,7 +12,7 @@ const colors = {
     border: `#ede7f3`,
     bright: `#e0d6eb`,
     light: `#f5f3f7`,
-    whisper: `#fbfafc`
+    whisper: `#fbfafc`,
   },
   code: {
     bg: `#fdfaf6`,
@@ -29,8 +29,8 @@ const colors = {
     cssString: `#a2466c`,
     invisibles: `#e0d7d1`,
     scrollbarThumb: `#f4d1c6`,
-    lineHighlightBorder: `#f1beb6`
-  }
-}
+    lineHighlightBorder: `#f1beb6`,
+  },
+};
 
-export default colors
+export default colors;

@@ -1,8 +1,8 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
+import React from 'react';
+import styled, { css } from 'styled-components';
 
-import { Center, LogoBoxes } from '../components'
-import colors from '../colors'
+import { Center, LogoBoxes } from '../components';
+import colors from '../colors';
 
 const Container = styled(Center)`
   height: 100vh;
@@ -36,14 +36,14 @@ const Container = styled(Center)`
         color: white;
       }
     `};
-`
+`;
 
 const LogoContainer = styled.div`
   position: absolute;
 
   top: 0;
   left: 0;
-`
+`;
 
 export default function Section({ children, inverted, ...rest }) {
   return (
@@ -53,5 +53,5 @@ export default function Section({ children, inverted, ...rest }) {
       </LogoContainer>
       {children}
     </Container>
-  )
+  );
 }

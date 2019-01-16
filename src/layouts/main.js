@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import { Center } from '../components'
-import colors from '../colors'
+import { Center } from '../components';
+import colors from '../colors';
 
 const Container = styled.div`
   display: flex;
@@ -25,20 +25,20 @@ const Container = styled.div`
     font-weight: 400;
     text-align: left;
   }
-`
+`;
 
 const CenteredHalf = styled(Center)`
   flex-direction: column;
   height: 50vh;
 
   padding-left: 15vw;
-`
+`;
 
 const PurpleBg = styled.div`
   width: 100vw;
   height: 50vh;
   background-color: ${colors.gatsby};
-`
+`;
 
 export default function Main({ children }) {
   return (
@@ -46,9 +46,9 @@ export default function Main({ children }) {
       <CenteredHalf>{children}</CenteredHalf>
       <PurpleBg />
     </Container>
-  )
+  );
 }
 
 Main.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
