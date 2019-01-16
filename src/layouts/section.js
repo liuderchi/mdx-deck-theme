@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { theme as mcsTheme } from 'mcs-ui';
 
 import { Center, LogoBoxes } from '../components';
 import colors from '../colors';
@@ -9,7 +10,8 @@ const Container = styled(Center)`
   width: 100vw;
 
   position: relative;
-  background-color: ${props => (props.inverted ? colors.gatsby : 'white')};
+  background-color: ${props =>
+    props.inverted ? mcsTheme.color.primary : 'white'};
 
   h1 {
     text-align: left;

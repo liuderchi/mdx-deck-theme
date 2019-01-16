@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme as mcsTheme } from 'mcs-ui';
+import { lighten } from 'polished';
 
 import colors from '../colors';
 
@@ -41,7 +43,11 @@ const Center = styled.div`
 `;
 
 export function Boxes({ children, inverted }) {
-  let layers = [colors.code.bg, colors.lilac, colors.gatsby];
+  let layers = [
+    mcsTheme.color.bodyBackgroundColor,
+    lighten(0.5, mcsTheme.color.primary),
+    mcsTheme.color.primary,
+  ];
 
   if (inverted) {
     layers = layers.reverse();

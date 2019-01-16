@@ -1,4 +1,5 @@
-import theme from 'mdx-deck/themes';
+import theme from 'mdx-deck/themes'; // https://github.com/jxnblk/mdx-deck/blob/118f7fd439/src/themes/index.js
+import { theme as mcsTheme } from 'mcs-ui';
 
 import { code, header } from './fonts';
 import colors from './colors';
@@ -14,18 +15,18 @@ export default {
   transitionDuration: '0s',
   colors: {
     background: 'white',
-    heading: colors.gatsby,
+    heading: mcsTheme.color.primary,
   },
   blockquote: {
-    color: colors.gatsby,
+    color: mcsTheme.color.primary,
     paddingLeft: '2rem',
-    borderLeft: `5px solid ${colors.gatsby}`,
+    borderLeft: `5px solid ${mcsTheme.color.primary}`,
   },
   paragraph: {
-    color: colors.gatsby,
+    color: mcsTheme.color.primary,
   },
   li: {
-    color: colors.gatsby,
+    color: mcsTheme.color.primary,
   },
   prism: {
     style: codeTheme,
