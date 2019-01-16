@@ -14,7 +14,7 @@ export default {
   transitionTimingFunction: 'linear',
   transitionDuration: '0s',
   colors: {
-    background: 'white',
+    ...theme.colors,
     heading: mcsTheme.color.primary,
   },
   blockquote: {
